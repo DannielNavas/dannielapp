@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native';
 import LoginForm from './src/components/LoginForm';
+import Saludar from './src/components/Saludar';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <LoginForm />
+      <Saludar name="danniel navas" />
+      <Saludar name="leslye navarro" />
     </View>
   );
 }
