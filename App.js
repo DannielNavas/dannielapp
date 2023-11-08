@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
+import DefautlProps from './src/components/DefaultProps';
 import LoginForm from './src/components/LoginForm';
 import Saludar from './src/components/Saludar';
 
@@ -9,6 +10,8 @@ export default function App() {
       <LoginForm />
       <Saludar name="danniel navas" />
       <Saludar name="leslye navarro" />
+      <DefautlProps />
+      <DefautlProps firstname="Leslye" lastname="Navarro" />
     </View>
   );
 }
