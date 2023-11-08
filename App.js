@@ -1,6 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { StyleSheet } from "react-native";
-import NavigationTab from "./src/navigation/NavigationTab";
+import NavigationDrawer from "./src/navigation/NavigationDrawer";
 
 
 
@@ -20,7 +20,8 @@ export default function App() {
       </View> */}
       {/* <NavigationStack /> */}
 
-      <NavigationTab />
+      {/* <NavigationTab /> */}
+      <NavigationDrawer />
     </NavigationContainer>
   );
 }
