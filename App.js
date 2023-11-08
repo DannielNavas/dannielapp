@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import DefautlProps from './src/components/DefaultProps';
 import LoginForm from './src/components/LoginForm';
 import Saludar from './src/components/Saludar';
+import ValidateProps from './src/components/ValidateProps';
 
 export default function App() {
   return (
@@ -10,8 +11,13 @@ export default function App() {
       <LoginForm />
       <Saludar name="danniel navas" />
       <Saludar name="leslye navarro" />
+      <Text>Default</Text>
       <DefautlProps />
       <DefautlProps firstname="Leslye" lastname="Navarro" />
+      <Text>Validate</Text>
+      <ValidateProps firstname="Leslye" lastname="Navarro" />
+      {/* <ValidateProps  /> */}
+
     </View>
   );
 }
