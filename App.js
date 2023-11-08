@@ -1,16 +1,13 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { StyleSheet, Text, View } from "react-native";
-import DefautlProps from "./src/components/DefaultProps";
-import LoginForm from "./src/components/LoginForm";
-import Saludar from "./src/components/Saludar";
-import ValidateProps from "./src/components/ValidateProps";
+import { StyleSheet } from "react-native";
+import NavigationStack from "./src/navigation/Navigation";
 
 
 
 export default function App() {
   return (
     <NavigationContainer>
-      <View style={styles.container}>
+      {/* <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
         <LoginForm />
         <Saludar name="danniel navas" />
@@ -20,8 +17,8 @@ export default function App() {
         <DefautlProps firstname="Leslye" lastname="Navarro" />
         <Text>Validate</Text>
         <ValidateProps firstname="Leslye" lastname="Navarro" />
-        {/* <ValidateProps  /> */}
-      </View>
+      </View> */}
+      <NavigationStack />
     </NavigationContainer>
   );
 }
